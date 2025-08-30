@@ -99,7 +99,13 @@ jobs:
     - if: ${{ matrix.build-mode == 'manual' && matrix.language == 'csharp' }}
       shell: bash
       run: |
-        dotnet build ./src/cartservice
+        dotnet build ./src/cartservice 
+    
+    
+    - if: ${{ matrix.build-mode == 'manual' && matrix.language == 'java-kotlin' }}
+      shell: bash
+      run: |
+        ./gradlew installDist
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
