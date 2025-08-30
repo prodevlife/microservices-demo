@@ -100,7 +100,6 @@ jobs:
       shell: bash
       run: |
         dotnet build ./src/cartservice
-        exit 1
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
