@@ -22,7 +22,7 @@ configargparse==1.7.1
     # via
     #   locust
     #   locust-cloud
-faker==37.5.3
+faker==37.6.0
     # via -r requirements.in
 flask==3.1.2
     # via
